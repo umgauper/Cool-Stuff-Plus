@@ -2,7 +2,42 @@
     width:100%;
     box-shadow:0 5px 5px hsl(60, 10%, 30%);
     position:absolute;
-    top:0;
     left:0;
 }
+div.menu {
+    margin-bottom:20px;
+    left:0;
+    top:0;
+   
+}
+li:first-child {
+    width: 175px;
+    height:50px;
+    list-style-type:none;
+    float:left;
+}
 
+
+li:not(:first-child) {
+    width:100px;
+    height:50px;
+    list-style-type:none;
+    float:left;
+    line-height:50px;
+    text-align:center;
+    background-color:#fff;
+
+}
+
+li a {
+    text-decoration: none;
+    line-height:50px;
+    color:hsl(225, 50%, 30%);
+    font-weight:bold;
+    font-family:sans-serif;
+ 
+
+}
+li:nth-child(n+3) {
+    border-left:1px solid gray;    
+}
