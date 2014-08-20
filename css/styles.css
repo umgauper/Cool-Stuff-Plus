@@ -1,0 +1,8 @@
+.sodaBanner {
+    width:100%;
+    box-shadow:0 5px 5px hsl(60, 10%, 30%);
+    position:absolute;
+    top:0;
+    left:0;
+}
+
