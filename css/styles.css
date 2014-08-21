@@ -1,43 +1,40 @@
-.sodaBanner {
-    width:100%;
-    box-shadow:0 5px 5px hsl(60, 10%, 30%);
-    position:absolute;
-    left:0;
-}
 div.menu {
-    margin-bottom:20px;
+    position:fixed;
+    width:100%;
+    height:auto;
     left:0;
     top:0;
-   
+    background-color:hsla(200, 100%, 100%, 0.9);
+    margin:0 auto;
+    box-shadow:0 1px 10px gray;
 }
-li:first-child {
-    width: 175px;
+a.brand {
+    font-size:40px;
+}
+nav li:first-child {
+    width: 400px;
     height:50px;
     list-style-type:none;
     float:left;
+    line-height:50px;
 }
 
 
-li:not(:first-child) {
+nav li:not(:first-child) {
     width:100px;
     height:50px;
     list-style-type:none;
     float:left;
     line-height:50px;
-    text-align:center;
-    background-color:#fff;
-
+    border-left:1px solid black;
 }
-
-li a {
+nav ul {
+    display:inline;
+}
+nav li a {
     text-decoration: none;
-    line-height:50px;
-    color:hsl(225, 50%, 30%);
+    color:hsl(225, 50%, 0%);
     font-weight:bold;
-    font-family:sans-serif;
- 
-
-}
-li:nth-child(n+3) {
-    border-left:1px solid gray;    
-}
+    font-family:courier,'Della respira', serif;
+    margin-left:20px;
+ }

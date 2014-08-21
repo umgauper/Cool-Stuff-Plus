@@ -3,37 +3,43 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Cool Stuff Plus</title>
+    <!-- jQuery library (served from Google) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.min.js"></script>
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
 </head>
+
 <body>
+
 <div class="container-fluid">
     <div class="row-fluid">
 
             <div class="span12 menu">
             <nav>
                 <ul>
-                    <li><a class="brand"><img src="img/logo-placeholder.png"></a></li>
+                    <li><a class="brand" href="#">COOL STUFF Plus</a></li>
                     <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">VIDEOS</a></li>
-                    <li><a href="#">FOR SALE</a></li>
-                    <li><a href="#">BLOG</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="span12">
-            <img src="img/vintage%20sodas.jpg" class="sodaBanner">
-        </div>
     </div>
     <h1>For Sale</h1>
-    <div class="row-fluid">
-        <div class="span4"></div>
-        <div class="span8">
-            <img src=img/Ice%20Machine.jpg>
-        </div>
-    </div>
+        <ul class="bxslider">
+            <li><img src=img/Ice%20Machine.jpg></li>
+            <li><img src="img/Ice%20Machine%202.jpg"</li>
+            <li><img src="img/Ice%20Machine%203.jpg"></li>
+            <li><img src="img/Ice%20Machine%204.jpg"></li>
+            <li><img src="img/Ice%20Machine%205.jpg"></li>
+        </ul>
 
 </div>
 </body>
+
+
+<!-- bxSlider CSS file -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 </html>
