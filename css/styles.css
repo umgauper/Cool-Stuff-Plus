@@ -1,5 +1,6 @@
+
 div.menu {
-    position:fixed;
+    position:absolute;
     width:100%;
     height:auto;
     left:0;
@@ -38,3 +39,25 @@ nav li a {
     font-family:courier,'Della respira', serif;
     margin-left:20px;
  }
+
+.price, .desc, .name {
+    text-align:center;
+
+
+}
+
+div.content {
+    margin-top:50px;
+}
+
+div.info {
+    border:1px solid gray;
+    padding:20px 20px 0;
+}
+
+h1 {
+    font-size:2em;
+    width:50px;
+    height:100px;
+    font-family:arial;
+}
