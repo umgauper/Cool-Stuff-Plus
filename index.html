@@ -2,53 +2,61 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Stuff Plus</title>
     <!-- jQuery library (served from Google) -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <!-- bxSlider Javascript file -->
     <script src="js/jquery.bxslider.min.js"></script>
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
 </head>
 
 <body>
 
 <div class="container-fluid">
-    <div class="row-fluid">
-        <header>
-            <div class="span12 menu">
-            <nav>
-                <ul>
-                    <li><a class="brand" href="#">COOL STUFF Plus</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                </ul>
-            </nav>
-        </div>
-        </header>
+    <div class="row-fluid"> <div class="col-md-10"></div>
+            <div class="col-md-12 menu">
+                <header>
+                    <nav>
+                        <ul>
+                            <li><a class="brand" href="#">COOL STUFF Plus</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
     </div>
-    <div class="row-fluid content">
-        <p  id="welcome">Welcome to <span>Cool Stuff Plus</span>. We specialize in smaller capacity refrigeration equipment and
+    <div class="row-fluid">
+       <div class="col-md-2"><p id="welcome">Welcome to <span>Cool Stuff Plus</span>. We specialize in smaller capacity refrigeration equipment and
             accessories for your household and business refrigeration. Check out our selection of beverage dispensing equipment.
         </p>
-        <h1 class="span4">FOR SALE</h1>
-                <div class="span3 info">
-                    <div class="span12 name"><h2>Hoshizaki Ice Maker</h2></div>
-                    <div class="span12 descr">Ice maker that makes ice and things. Very nice.</div>
-                    <div class="span12 price">$1000</div>
-                    <ul class="bxslider">
-                        <li><img src=img/Ice%20Machine.jpg></li>
-                        <li><img src="img/Ice%20Machine%202.jpg"></li>
-                        <li><img src="img/Ice%20Machine%203.jpg"></li>
-                        <li><img src="img/Ice%20Machine%205.jpg"></li>
-                    </ul>
-                </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-9"><h1>FOR SALE</h1></div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-md-9-offset-3">
+            <div class="row-fluid">
+                <div class="col-md-9 info"></div>
+                <div class="col-md-9 name"><h2>Hoshizaki Ice Maker</h2></div>
+                <div class="col-md-9 descr">Ice maker that makes ice and things. Very nice.</div>
+                <div class="col-md-9">$1000</div>
+                <ul class="bxslider">
+                    <li><img src=img/Ice%20Machine.jpg></li>
+                    <li><img src="img/Ice%20Machine%202.jpg"></li>
+                    <li><img src="img/Ice%20Machine%203.jpg"></li>
+                    <li><img src="img/Ice%20Machine%205.jpg"></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 
-<!-- bxSlider CSS file -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
+
 </html>
