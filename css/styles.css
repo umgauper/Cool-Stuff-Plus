@@ -1,3 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,700);
+
+body {
+    font-family:Roboto, sans-serif;
+    color:#404040;
+}
+
+.banner img {
+    width:100%;
+    margin-top:10px;
+}
+
 div.menu {
     position:absolute;
     width:100%;
@@ -18,8 +30,6 @@ nav li:first-child {
     float:left;
     line-height:50px;
 }
-
-
 nav li:not(:first-child) {
     width:100px;
     height:50px;
@@ -38,25 +48,55 @@ nav li a {
     font-family:courier,'Della respira', serif;
     margin-left:20px;
  }
-
-.price, .desc, .name {
-    text-align:center;
-
-
+#welcome, #about {
+    margin-top:10px;
+    width:896px;
+    padding:0px 65px 0px 65px;
+    font-size:1.5em;
 }
-
-div.content {
-    margin-top:50px;
-}
-
-div.info {
-    border:1px solid gray;
-    padding:20px 20px 0;
-}
-
-h1 {
+#welcome span {
     font-size:2em;
-    width:50px;
-    height:100px;
-    font-family:arial;
+    font-weight:bold;
+}
+#about {
+    height:480px;
+}
+h1#forSale {
+    font-size:2em;
+    padding-left:65px;
+}
+div.saleBlock {
+    display:flex;
+    flex-direction:row;
+    height:500px;
+    width:1024px;
+}
+div.info {
+    height:400px;
+    width:330px;
+    padding-left:65px;
+}
+
+div.slider {
+    height:400px;
+    width:512px;
+    padding-left:50px;
+}
+footer div {
+    display:flex;
+    position:absolute;
+    height:50px;
+    width:100%;
+    justify-content: center;
+    background: /*http://lea.verou.me/css3patterns/#carbon-fibre*/
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+    color:whitesmoke;
+}
+footer p:first-child, footer p:nth-child(2), footer p:nth-child(3), footer p:nth-child(4) {
+    padding-right:20px;
 }
