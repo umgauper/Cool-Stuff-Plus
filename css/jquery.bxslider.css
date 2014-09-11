@@ -32,7 +32,10 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	border:  5px solid #fff;
+	border:  5px solid white;
+    border-radius: 10px;
+    box-shadow:10px 10px 0 0 lightgray;
+    background-color:white;
 	left: -5px;
 
 	/*fix other elements on the page moving (on Chrome)*/
