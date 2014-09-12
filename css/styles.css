@@ -4,20 +4,25 @@
 body {
     font-family:Roboto, sans-serif;
 }
+
 * {
     margin: 0;
 }
+
 html, body {
     height:100%
 }
+
 body {
     background-color: rgb(240, 240, 240);
     color: rgb(16, 16, 16);
 }
+
 .page-wrap { /*http://css-tricks.com/snippets/css/sticky-footer/*/
     min-height:100%;
     margin-bottom: -80px;
 }
+
 .page-wrap:after {
     content: "";
     display: block;
@@ -27,20 +32,22 @@ body {
     height:80px;
     background-color:rgb(87, 95, 104);
     border-bottom: 20px solid rgb(56, 56, 56);
-
     color:whitesmoke;
     display:flex;
     flex-direction:row;
     justify-content: space-around;
 
 }
+
 .page-wrap:after {
     border-top:10px solid rgb(165, 190, 217);
 }
+
 .site-footer p {
     height:20px;
     margin:auto 0;
 }
+
 div.menu {
     position:absolute;
     width:100%;
@@ -51,9 +58,11 @@ div.menu {
     background-color:whitesmoke;
     border-bottom:10px solid rgb(165, 190, 217);
 }
+
 a.brand {
     font-size:40px;
 }
+
 nav li:first-child {
     width: 400px;
     height:50px;
@@ -61,6 +70,7 @@ nav li:first-child {
     float:left;
     line-height:50px;
 }
+
 nav li:not(:first-child) {
     width:100px;
     height:50px;
@@ -69,9 +79,11 @@ nav li:not(:first-child) {
     line-height:50px;
     border-left:1px solid black;
 }
+
 nav ul {
     display:inline;
 }
+
 nav li a {
     text-decoration: none;
     font-weight: bold;
@@ -83,28 +95,33 @@ nav li a {
 nav li a:hover {
     color:black;
 }
+
 .banner img {
     width:100%;
     margin-top:2.5%;
     border-bottom:10px solid #575F68;
 }
+
 #welcome span {
     font-size:200%;
     font-weight:bold;
 }
+
 #welcome {
     margin:3.4% auto 3.4% 12.5%;
     width:75%;
     font-size: 150%;
 }
+
 h1#forSale {
-    font-size:350%;
+    font-size:50px;
     font-weight:bold;
     width:50%;
     margin:6% auto;
     text-align:center;
     letter-spacing:5px;
 }
+
 hr {
     width:75%;
     margin-left:12.5%;
@@ -112,21 +129,22 @@ hr {
     -webkit-transform:scale(1.0, 2.0);
     -moz-transform:scale(1.0, 2.0);
 }
+
 div.saleBlock {
     display:flex;
     flex-direction:row;
-    height:62%;
+    /*height:62%;*/
     width:100%;
 }
 
 div.info {
-    height:62%;
+    /*height:62%;*/
     width:33%;
     padding-left:6.5%;
 }
 
 div.slider {
-    height:62%;
+    /*height:62%;*/
     width:51.2%;
     padding-left:5%;
 }
@@ -145,6 +163,7 @@ div.aboutContainer {
     font-size:150%;
 
 }
+
 #about span {
     font-weight:bold;
 }
@@ -154,16 +173,83 @@ div.aboutContainer img {
     height:56.25%;
     margin-top:10%;
 }
+div.mobile-menu {
+    display:none;
+    width:100%;
+    background-color:whitesmoke;
+    border-bottom:10px solid rgb(165, 190, 217);
+    font-family: courier, 'Della respira', serif;
+}
+
+.mobile-menu h1{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0;
+    margin-top:0;
+    text-align:center;
+}
+div.mobile-footer {
+    display:none;
+}
+/*<500px width viewport styles*/
 
 @media screen and (max-width: 500px) {
-    body {
-        background-color:blue;
+    .banner, div.menu {
+        display:none;
+    }
+    #forSale
+    {
+        font-size:1em;
+        color:indianred;
+    }
+    #welcome {
+        width:100%;
+        margin:10px;
+    }
+    #welcome, #welcome span {
+        font-size: 115%;
+    }
+    #welcome span {
+        font-weight: bold;
     }
     div.saleBlock {
         flex-direction:column;
-        background-color:blue;
+
     }
-    div.info, div.slider {
+    div.slider, div.info {
+        width:90%;
+    }
+    .site-footer, .page-wrap:after {
+        display:none;
+    }
+    div.mobile-footer {
+        background-color: rgb(56, 56, 56);
+        display:flex;
+        height: 80px;
+        margin-top:80px;
+        /*width:100%;*/
+    }
+    div.mobile-footer li {
+        list-style-type:none;
+        font-size:1.1em;
+        height:30px;
+        width:30px;
+        margin-top:10px;
+    }
+    div.mobile-footer a {
         width:100%;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: #fff;
+        border-bottom: 1px solid #383838;
+    }
+
+    div.mobile-footer a:hover {
+        color: lightgray;
+    }
+    div.mobile-menu {
+        display: block;
     }
 }
+
