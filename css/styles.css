@@ -18,6 +18,11 @@ body {
     color: rgb(16, 16, 16);
 }
 
+a {
+    text-decoration:none;
+    color: inherit;
+}
+
 .page-wrap { /*http://css-tricks.com/snippets/css/sticky-footer/*/
     min-height:100%;
     margin-bottom: -80px;
@@ -168,27 +173,27 @@ div.slider {
 div.aboutContainer {
     padding: 10px;
     padding-bottom: 7.8%;
-    display: flex;
-    flex-direction: row;
+    display:flex;
+    flex-direction: column;
+
 }
 
 #about {
     margin-top:10%;
-    width:33%;
     padding:0 6.5%;
-    font-size:150%;
-
+    font-size: 150%;
 }
-
+div.aboutContainer img {
+    max-width:480px;
+    margin:3.5% 0 0 6.5%;
+    text-align: center;
+    border:5px solid transparent;
+    border-radius: 25px;
+}
 #about span {
     font-weight:bold;
 }
 
-div.aboutContainer img {
-    width:48%;
-    height:56.25%;
-    margin-top:10%;
-}
 div.mobile-menu {
     display:none;
     width:100%;
@@ -209,7 +214,7 @@ div.mobile-footer {
     display:none;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 775px) {
     .site-footer div {
         flex-direction: column;
         padding:10px 0;
@@ -221,33 +226,49 @@ div.mobile-footer {
 }
 @media screen and (max-width: 500px) {
     .banner, div.menu {
-        display:none;
+        display: none;
     }
-    #forSale
-    {
-        font-size:1em;
+
+    #forSale {
+        font-size: 1em;
     }
+
     #welcome {
-        width:100%;
-        margin:10px;
+        width: 100%;
+        margin: 10px;
     }
+
     #welcome, #welcome span {
         font-size: 115%;
     }
+
     #welcome span {
         font-weight: bold;
     }
+
     div.saleBlock {
-        flex-direction:column;
+        flex-direction: column;
 
     }
+
     div.slider, div.info {
+        width: 90%;
+    }
+
+    div.info div {
+        text-align: left;
+    }
+
+    div.aboutContainer {
+        flex-direction: column;
+    }
+
+    #about {
         width:90%;
     }
-    div.info div {
-        text-align:left;
+    div.aboutContainer img {
+        max-width: 100%;
     }
-
     .site-footer, .page-wrap:after {
         display:none;
     }
