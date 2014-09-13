@@ -26,19 +26,21 @@ body {
 .page-wrap:after {
     content: "";
     display: block;
+    height:80px;
 }
 
-.site-footer, .page-wrap:after {
-    height:80px;
-    background-color:rgb(87, 95, 104);
+.site-footer {
+    background-color: rgb(87, 95, 104);
     border-bottom: 20px solid rgb(56, 56, 56);
-    color:whitesmoke;
+    color: whitesmoke;
+}
+
+.site-footer div {
+    height:80px;
     display:flex;
     flex-direction:row;
     justify-content: space-around;
-
 }
-
 .page-wrap:after {
     border-top:10px solid rgb(165, 190, 217);
 }
@@ -98,7 +100,7 @@ nav li a:hover {
 
 .banner img {
     width:100%;
-    margin-top:2.5%;
+    margin-top:50px;
     border-bottom:10px solid #575F68;
 }
 
@@ -142,6 +144,21 @@ div.info {
     width:33%;
     padding-left:6.5%;
 }
+div.info div{
+    text-align:right;
+}
+
+div.name {
+    margin-bottom:8%;
+}
+div.info div:not(first-child) {
+    margin-bottom:4%;
+}
+
+div.call {
+    font-weight: bold;
+
+}
 
 div.slider {
     /*height:62%;*/
@@ -149,13 +166,12 @@ div.slider {
     padding-left:5%;
 }
 div.aboutContainer {
-    padding:10px;
-    padding-bottom:7.8%;
-    display:flex;
-    flex-direction:row;
-
-
+    padding: 10px;
+    padding-bottom: 7.8%;
+    display: flex;
+    flex-direction: row;
 }
+
 #about {
     margin-top:10%;
     width:33%;
@@ -192,8 +208,17 @@ div.mobile-menu {
 div.mobile-footer {
     display:none;
 }
-/*<500px width viewport styles*/
 
+@media screen and (max-width: 650px) {
+    .site-footer div {
+        flex-direction: column;
+        padding:10px 0;
+    }
+    .site-footer p {
+        text-align:center;
+        margin:0;
+    }
+}
 @media screen and (max-width: 500px) {
     .banner, div.menu {
         display:none;
@@ -201,7 +226,6 @@ div.mobile-footer {
     #forSale
     {
         font-size:1em;
-        color:indianred;
     }
     #welcome {
         width:100%;
@@ -220,6 +244,10 @@ div.mobile-footer {
     div.slider, div.info {
         width:90%;
     }
+    div.info div {
+        text-align:left;
+    }
+
     .site-footer, .page-wrap:after {
         display:none;
     }
