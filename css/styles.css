@@ -155,6 +155,7 @@ div.saleBlock {
     flex-direction:row;
     width:100%;
 }
+
 div.info {
     width:33%;
     padding-left:6.5%;
@@ -162,6 +163,19 @@ div.info {
 div.info div{
     text-align:right;
 }
+div.Hoshizaki * {
+    text-align:left;
+}
+div.viewMore > ul > li{
+    margin-bottom:10px;
+}
+div.viewMore > ul > li ul {
+    margin-top:10px;
+}
+div.viewMore {
+    display:none;
+}
+
 div.name {
     margin-bottom:8%;
 }
