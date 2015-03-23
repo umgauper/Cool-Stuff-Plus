@@ -36,8 +36,8 @@ div.menu {
     left:0;
     top:0;
     margin:0 auto;
-    background-color:whitesmoke;
-    border-bottom:10px solid rgb(165, 190, 217);
+    background-color: #A5BED9;
+    border-bottom:1px solid rgb(0, 0 0);
 }
 a.brand {
     font-size:40px;
@@ -128,11 +128,11 @@ div.mobile-footer a:hover {
     border-bottom:10px solid #575F68;
 }
 #welcome span {
-    font-size:200%;
+    font-size:150%;
     font-weight:bold;
 }
 #welcome {
-    margin:3.4% auto 3.4% 12.5%;
+    margin: 3% auto 3% 12.5%;
     width:75%;
     font-size: 150%;
 }
@@ -193,11 +193,27 @@ div.slider {
 /* About Page Styles */
 
 #about {
-    margin-top:10%;
-    padding:0 6.5% 50% 6.5%;
-    font-size: 150%;
-    display:block;
-    height: 100%;
+    margin-bottom: -20%;
+    /*text-align: left;*/
+    font-size: 120%;
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+
+}
+.aboutContainer {
+    margin: 10% 10% 0 10%;
+    padding-bottom: 30%;
+}
+
+.aboutContainer img {
+    border: 1px solid transparent;
+    border-radius: 30px;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 2.5%;
+    width: 50%;
+
 }
 
 #about span {
