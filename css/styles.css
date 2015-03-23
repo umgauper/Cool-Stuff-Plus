@@ -140,7 +140,7 @@ h1#forSale {
     font-size:50px;
     font-weight:bold;
     width:50%;
-    margin:6% auto;
+    margin:3% auto -2% auto;
     text-align:center;
     letter-spacing:5px;
 }
@@ -150,6 +150,22 @@ hr {
     transform:scale(1.0, 2.0);
     -webkit-transform:scale(1.0, 2.0);
     -moz-transform:scale(1.0, 2.0);
+}
+.panel ul {
+    display: inline;
+}
+.panel li {
+    background-color: #D3D3D3;
+    padding: 20px 50px;
+    line-height: 200px;
+    border: 10px solid transparent;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 25px;
+    display: inline;
+}
+.panel li.active {
+    background-color: white;
 }
 div.saleBlock {
     display:flex;
@@ -194,7 +210,6 @@ div.slider {
 
 #about {
     margin-bottom: -20%;
-    /*text-align: left;*/
     font-size: 120%;
     display: inline-block;
     width: 40%;
