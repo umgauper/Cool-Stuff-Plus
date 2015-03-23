@@ -1,14 +1,10 @@
-
-* test in Safari, IE 8, 9, & 10
-* edit banner image in Photoshop
-* style description and price (use complementary orange to emphasize price?), and add Call XXX-XXXX that stands out
-* change flex-direction in footer at viewport width where the p's start collapsing
-* decrease size of FOR SALE for <500px viewport
-* create Contact page
-* add styles to media queries for about page
-* change banner image to show top of bottle (need to either increase margin-top, or re-crop original image)
-
-
-##### Maybe
-* link photos in slider to its larger image (?)
-
+* add panel buttons for Other vs fridge...maybe give each fridge item class of fridge, then ng-show if fridge is clicked and class is fridge?..
+    or...put fridge and non-fridge in separate templates?
+* page working fine in Firefox, but images not loading correctly in Chrome on first open, but works on refresh ...?
+* fix offset of image slide prev and next buttons, they're slightly cut off!
+* remove "other items" link in nav bar
+* add photo to about page
+* add responsive styles to about page
+* increase gap between bottom of banner image and top of 'welcome'
+* put changes on dreamhost
+* add project to FCC portfolio and unagauper.com portfolio
