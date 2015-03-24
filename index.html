@@ -5,18 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Stuff Plus</title>
     <script src="js/jquery.js"></script>
-    <script src="js/angular.js"></script>
-    <script src="js/myApp.js"></script>
     <!-- bxSlider from bxslider.com-->
-
-    <script src="js/scripts.js"></script>
     <link href="css/jquery.bxslider.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
 </head>
 
-<body ng-app="myApp">
+<body>
     <div class="page-wrap" >
         <div class="menu">
             <header>
@@ -37,14 +33,14 @@
         </p>
        <hr>
        <h1 id="forSale">FOR SALE</h1>
-        <div class="controller-div" ng-controller="panelController">
+        <div>
             <div class="panel">
                 <ul>
-                    <li ng-click="selected='refrig'" ng-class="{active: selected === 'refrig'}">Refrigeration</li>
-                    <li ng-click="selected='non-refrig'" ng-class="{active: selected === 'non-refrig'}">Other</li>
+                    <li class="refrig">Refrigeration</li>
+                    <li class="other">Other</li>
                 </ul>
             </div>
-            <div class="refrig" ng-show="selected=='refrig'">
+            <div class="refrig">
                 <div class="saleBlock">
                     <div class="info">
                         <div class="name"><h2>Hoshizaki Ice Maker</h2></div>
@@ -153,7 +149,7 @@
                     </div>
                 </div>
             </div>
-            <div class="non-refrig" ng-show="selected=='non-refrig'">
+            <div class="other">
                 <div class="saleBlock">
                     <div class="info">
                         <div class="name"><h2>Universal Chrome Wheels (Two)</h2></div>
@@ -222,6 +218,7 @@
 
 
     <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 </html>

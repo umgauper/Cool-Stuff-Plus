@@ -37,8 +37,9 @@ div.menu {
     top:0;
     margin:0 auto;
     background-color: #A5BED9;
-    border-bottom:1px solid rgb(0, 0 0);
+    border-bottom:1px solid #000000;
 }
+
 a.brand {
     font-size:40px;
 }
@@ -164,9 +165,7 @@ hr {
     font-size: 25px;
     display: inline;
 }
-.panel li.active {
-    background-color: white;
-}
+
 div.saleBlock {
     display:flex;
     flex-direction:row;
