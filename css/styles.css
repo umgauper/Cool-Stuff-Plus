@@ -6,7 +6,6 @@ body {
 * {
     margin: 0;
 }
-
 html, body {
     height:100%
 }
@@ -26,7 +25,6 @@ a {
     content: "";
     display: block;
     height:80px;
-    border-top:10px solid rgb(165, 190, 217);
 }
 /* Menu Styles */
 div.menu {
@@ -39,7 +37,6 @@ div.menu {
     background-color: #A5BED9;
     border-bottom:1px solid #000000;
 }
-
 a.brand {
     font-size:40px;
 }
@@ -87,6 +84,7 @@ div.mobile-menu {
 .site-footer {
     background-color: rgb(87, 95, 104);
     border-bottom: 20px solid rgb(56, 56, 56);
+    border-top:10px solid rgb(165, 190, 217);
     color: whitesmoke;
 }
 .site-footer div {
@@ -156,7 +154,7 @@ hr {
     display: inline;
 }
 .panel li {
-    background-color: #D3D3D3;
+    background-color: #ffffff;
     padding: 20px 50px;
     line-height: 200px;
     border: 10px solid transparent;
@@ -219,7 +217,6 @@ div.slider {
     margin: 10% 10% 0 10%;
     padding-bottom: 30%;
 }
-
 .aboutContainer img {
     border: 1px solid transparent;
     border-radius: 30px;
@@ -229,13 +226,38 @@ div.slider {
     width: 50%;
 
 }
-
 #about span {
     font-weight:bold;
 }
-
 div.mobile-footer {
     display:none;
+}
+
+/* Contact Page Styles */
+form {
+    padding: 2%;
+    background-color: #ffffff;
+    width: 50%;
+    border: 10px solid transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #383838;
+}
+div.form {
+    padding: 10% 0 10% 30%;
+}
+
+input {
+    padding: 2%;
+    border: 10px solid transparent;
+    border-radius: inherit;
+    background-color: #D3D3D3;
+}
+input[type=text] {
+    margin:2% 0 5% 0;
+}
+#submit {
+    background-color: #b0d8a6;
 }
 
 /* media queries for smaller screens */
@@ -268,6 +290,17 @@ div.mobile-footer {
     #forSale {
         font-size: 1em;
     }
+    div.panel {
+        width: 300px;
+        height: 150px;
+        padding: 0;
+        margin: 0 0 0 50px;
+    }
+    div.panel li, div.panel ul {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
     div.saleBlock {
         flex-direction: column;
     }
@@ -284,6 +317,17 @@ div.mobile-footer {
         width:90%;
         font-size:125%;
         margin-top: 2.5%;
+    }
+    .aboutContainer img {
+        width: 100%;
+        margin: 2% 2% 2% 0%;
+    }
+    form {
+        width: 90%;
+        padding: auto 0;
+    }
+    div.form {
+        padding: 0;
     }
     div.aboutContainer img {
         max-width: 100%;
